@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marea · Soporte / Support</title>
+<meta name="description" content="Ayuda y contacto del juego Marea para iPhone. Help and contact for the Marea iPhone game.">
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --noche: #0d1c30;
+    --noche-honda: #060e1b;
+    --noche-clara: #172e4a;
+    --laton: #d4ab54;
+    --laton-claro: #f2d68c;
+    --laton-oscuro: #785926;
+    --pergamino: #ede0c2;
+    --pergamino-tenue: rgba(237, 224, 194, 0.72);
+    --turquesa: #54ccc7;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--noche-honda);
+    background-image:
+      radial-gradient(ellipse 120% 60% at 50% 0%, var(--noche-clara) 0%, transparent 70%),
+      linear-gradient(180deg, var(--noche) 0%, var(--noche-honda) 100%);
+    background-attachment: fixed;
+    color: var(--pergamino);
+    font: 400 19px/1.6 "Alegreya", Georgia, "Times New Roman", serif;
+  }
+  a { color: var(--laton-claro); text-underline-offset: 3px; }
+  a:hover { color: #fff; }
+  .hoja { max-width: 760px; margin: 0 auto; padding: 48px 20px 72px; }
+  header { text-align: center; margin-bottom: 36px; }
+  .logo {
+    font: 900 clamp(56px, 16vw, 104px)/1 "Cinzel", Georgia, serif;
+    letter-spacing: 0.02em;
+    margin: 0;
+    background: linear-gradient(180deg, #fff0b4 0%, #face60 38%, #e2962a 72%, #b2621a 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 3px 0 var(--laton-oscuro)) drop-shadow(0 8px 14px rgba(0,0,0,.55));
+  }
+  .ola { display: block; width: min(420px, 80%); height: 18px; margin: 6px auto 18px; }
+  .sub {
+    font: 700 15px/1.4 "Cinzel", Georgia, serif; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--laton); margin: 0;
+  }
+  nav.idiomas { display: flex; justify-content: center; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+  nav.idiomas a {
+    font: 700 14px/1 "Cinzel", Georgia, serif; letter-spacing: .14em; text-decoration: none;
+    color: var(--noche-honda); background: linear-gradient(180deg, var(--laton-claro), var(--laton));
+    padding: 12px 20px; border-radius: 999px; box-shadow: 0 2px 0 var(--laton-oscuro);
+  }
+  section.idioma {
+    background: linear-gradient(180deg, rgba(23,46,74,.72), rgba(13,28,48,.72));
+    border: 1px solid rgba(212,171,84,.55);
+    border-radius: 22px;
+    padding: 30px clamp(20px, 5vw, 44px) 34px;
+    margin: 0 0 34px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.35), inset 0 1px 0 rgba(242,214,140,.18);
+  }
+  h2 {
+    font: 700 clamp(24px, 6vw, 32px)/1.2 "Cinzel", Georgia, serif; color: var(--laton-claro);
+    margin: 0 0 6px; letter-spacing: .03em;
+  }
+  h3 {
+    font: 700 18px/1.3 "Cinzel", Georgia, serif; color: var(--laton); letter-spacing: .08em;
+    text-transform: uppercase; margin: 30px 0 8px;
+  }
+  .fecha { color: var(--pergamino-tenue); font-style: italic; margin: 0 0 18px; }
+  .resumen {
+    border-left: 3px solid var(--turquesa); padding: 10px 0 10px 16px; margin: 18px 0 8px;
+    background: rgba(84,204,199,.07); border-radius: 0 12px 12px 0;
+  }
+  .resumen strong { color: #fff; }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .aparte {
+    margin-top: 28px; padding: 18px 20px; border-radius: 14px;
+    border: 1px dashed rgba(212,171,84,.55); background: rgba(6,14,27,.45);
+  }
+  .aparte h3 { margin-top: 0; }
+  code { font-family: ui-monospace, Menlo, monospace; font-size: .9em; color: var(--laton-claro); }
+  footer { text-align: center; color: var(--pergamino-tenue); font-size: 16px; }
+  footer .rombo { color: var(--laton); letter-spacing: .6em; }
+  @media (prefers-color-scheme: light) {
+    body {
+      background: #f4ecd9;
+      background-image: radial-gradient(ellipse 120% 60% at 50% 0%, #fffaf0 0%, transparent 70%);
+      color: #2a1c0e;
+    }
+    section.idioma { background: #fffaf0; box-shadow: 0 14px 30px rgba(60,40,10,.12); border-color: rgba(120,89,38,.4); }
+    h2 { color: #7a531a; } h3 { color: #8f6420; }
+    a { color: #7a531a; } a:hover { color: #2a1c0e; }
+    .fecha, footer { color: rgba(42,28,14,.7); }
+    .resumen { background: rgba(84,204,199,.12); } .resumen strong { color: #2a1c0e; }
+    .aparte { background: rgba(255,255,255,.5); border-color: rgba(120,89,38,.45); }
+    code { color: #7a531a; }
+  }
+  details {
+    border-top: 1px solid rgba(212,171,84,.3); padding: 12px 0;
+  }
+  details:last-of-type { border-bottom: 1px solid rgba(212,171,84,.3); }
+  summary {
+    cursor: pointer; list-style: none; font-weight: 700; color: #fff; padding: 4px 28px 4px 0; position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 4px; top: 0; font: 700 22px/1.3 "Cinzel", Georgia, serif; color: var(--laton);
+  }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 8px 0 4px; }
+  .boton {
+    display: inline-block; margin-top: 6px; font: 700 15px/1 "Cinzel", Georgia, serif; letter-spacing: .12em;
+    text-decoration: none; color: var(--noche-honda); padding: 16px 26px; border-radius: 999px;
+    background: linear-gradient(180deg, var(--laton-claro), var(--laton)); box-shadow: 0 3px 0 var(--laton-oscuro);
+  }
+  .boton:hover { color: var(--noche-honda); filter: brightness(1.06); }
+  @media (prefers-color-scheme: light) {
+    summary { color: #2a1c0e; }
+    details, details:last-of-type { border-color: rgba(120,89,38,.3); }
+  }
+</style>
+</head>
+<body>
+<div class="hoja">
+  <header>
+    <p class="logo">MAREA</p>
+    <svg class="ola" viewBox="0 0 420 18" aria-hidden="true">
+      <path d="M2 11 C 50 2, 90 18, 140 9 S 230 2, 280 10 S 370 16, 418 6" fill="none" stroke="#54ccc7" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <p class="sub">Soporte · Support</p>
+    <nav class="idiomas" aria-label="Idioma / Language">
+      <a href="#es" lang="es">Español</a>
+      <a href="#en" lang="en">English</a>
+    </nav>
+  </header>
+
+  <section class="idioma" id="es" lang="es">
+    <h2>Soporte</h2>
+    <p class="fecha">¿Algo no va bien a bordo? Aquí tienes las dudas más comunes y cómo escribirnos.</p>
+
+    <h3>Escríbenos</h3>
+    <p>Cuéntanos qué ha pasado, qué modelo de iPhone tienes y qué versión de iOS, y si puedes
+    añade una captura de pantalla. Respondemos en español o en inglés.</p>
+    <p><a class="boton" href="mailto:fadriquealvarezdetoledoabaitua@gmail.com?subject=Marea%20-%20Soporte">Escribir a soporte</a></p>
+    <p>O directamente a <a href="mailto:fadriquealvarezdetoledoabaitua@gmail.com">fadriquealvarezdetoledoabaitua@gmail.com</a>.</p>
+
+    <h3>Preguntas frecuentes</h3>
+    <details>
+      <summary>¿Cómo se maneja el barco?</summary>
+      <p>Apoya el pulgar abajo a la izquierda y arrastra hacia donde quieras ir: es el timón.
+      Con el cabo de la derecha subes y bajas las velas. A favor del viento se va más rápido;
+      el viento se ve en las líneas sobre el mar y en la brújula.</p>
+    </details>
+    <details>
+      <summary>¿Cómo disparo los cañones?</summary>
+      <p>Mantén pulsado BABOR o ESTRIBOR, arrastra para alargar el tiro mirando la parábola
+      sobre el agua y suelta para lanzar la andanada.</p>
+    </details>
+    <details>
+      <summary>¿Cómo se pesca?</summary>
+      <p>Con las velas recogidas y parado, o desde un muelle o una orilla, toca el icono de
+      pescar. Baja el anzuelo esquivando las bocas y sube con el gancho lleno. Cada temporada
+      pican peces distintos; los tienes todos en el cuaderno de bitácora.</p>
+    </details>
+    <details>
+      <summary>¿Necesito una cuenta o conexión a internet?</summary>
+      <p>No. Entras como invitado y juegas sin conexión. Tu partida se guarda en el teléfono.</p>
+    </details>
+    <details>
+      <summary>He cambiado de iPhone. ¿Puedo pasar mi partida?</summary>
+      <p>La partida vive en el teléfono, así que viaja con él si restauras el iPhone nuevo desde
+      una copia de seguridad (de iCloud o del ordenador) del antiguo. Si borras la app, la
+      partida se borra con ella.</p>
+    </details>
+    <details>
+      <summary>¿Hay compras o anuncios?</summary>
+      <p>No. Marea no tiene compras dentro de la app ni publicidad. Todo se gana jugando.</p>
+    </details>
+    <details>
+      <summary>¿Hay multijugador?</summary>
+      <p>Todavía no. El mar abierto, para navegar con otros jugadores, llegará en una
+      actualización.</p>
+    </details>
+    <details>
+      <summary>El juego va lento o el teléfono se calienta</summary>
+      <p>En <em>Ajustes</em> puedes bajar la calidad gráfica. Cerrar otras apps también ayuda.
+      Si sigue pasando, escríbenos con el modelo de iPhone.</p>
+    </details>
+
+    <h3>Privacidad</h3>
+    <p>Marea no recoge datos. Lo tienes todo en la <a href="privacidad.html">política de privacidad</a>.</p>
+  </section>
+
+  <section class="idioma" id="en" lang="en">
+    <h2>Support</h2>
+    <p class="fecha">Something wrong on board? Here are the most common questions and how to reach us.</p>
+
+    <h3>Write to us</h3>
+    <p>Tell us what happened, your iPhone model and iOS version, and add a screenshot if you
+    can. We answer in English or Spanish. (The game itself is in Spanish for now.)</p>
+    <p><a class="boton" href="mailto:fadriquealvarezdetoledoabaitua@gmail.com?subject=Marea%20-%20Support">Email support</a></p>
+    <p>Or write directly to <a href="mailto:fadriquealvarezdetoledoabaitua@gmail.com">fadriquealvarezdetoledoabaitua@gmail.com</a>.</p>
+
+    <h3>Frequently asked questions</h3>
+    <details>
+      <summary>How do I steer the ship?</summary>
+      <p>Rest your thumb at the bottom left and drag toward where you want to go: that's the
+      helm. The rope on the right raises and lowers the sails. Sailing with the wind is
+      faster; you can see the wind in the streaks over the sea and on the compass.</p>
+    </details>
+    <details>
+      <summary>How do I fire the cannons?</summary>
+      <p>Hold BABOR (port) or ESTRIBOR (starboard), drag to lengthen the shot while watching
+      the arc on the water, and let go to fire the broadside.</p>
+    </details>
+    <details>
+      <summary>How do I fish?</summary>
+      <p>With the sails furled and the ship stopped, or from a pier or shore, tap the fishing
+      icon. Drop the hook, dodge the jaws and reel up a full hook. Different fish bite every
+      season; they are all in the captain's logbook.</p>
+    </details>
+    <details>
+      <summary>Do I need an account or an internet connection?</summary>
+      <p>No. You enter as a guest and play offline. Your game is saved on your phone.</p>
+    </details>
+    <details>
+      <summary>I got a new iPhone. Can I move my game?</summary>
+      <p>Your game lives on the phone, so it moves with it if you set up the new iPhone from a
+      backup (iCloud or computer) of the old one. Deleting the app deletes the game.</p>
+    </details>
+    <details>
+      <summary>Are there purchases or ads?</summary>
+      <p>No. Marea has no in-app purchases and no ads. Everything is earned by playing.</p>
+    </details>
+    <details>
+      <summary>Is there multiplayer?</summary>
+      <p>Not yet. The open sea, to sail with other players, will arrive in an update.</p>
+    </details>
+    <details>
+      <summary>The game is slow or my phone gets warm</summary>
+      <p>You can lower the graphics quality in <em>Ajustes</em> (Settings). Closing other apps
+      also helps. If it keeps happening, write to us with your iPhone model.</p>
+    </details>
+
+    <h3>Privacy</h3>
+    <p>Marea collects no data. Everything is in the <a href="privacidad.html#en">privacy policy</a>.</p>
+  </section>
+
+  <footer>
+    <p class="rombo">◆ ◆ ◆</p>
+    <p>Marea · <a href="privacidad.html">Privacidad / Privacy</a></p>
+  </footer>
+</div>
+</body>
+</html>
